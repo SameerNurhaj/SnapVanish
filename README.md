@@ -100,7 +100,3 @@ No audio, video or images are uploaded anywhere. Settings are stored in Chrome's
 ## Notes
 
 This is a fun side project and is not affiliated with or endorsed by Google, Meet, or Marvel. Be mindful of where you use it: vanishing from a meeting mid-sentence may surprise people.
-
-## License
-
-MIT. Add a `LICENSE` file to the repository root to make this official.

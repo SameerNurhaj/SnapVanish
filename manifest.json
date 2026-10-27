@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Snap Vanish for Google Meet",
+  "version": "1.0.0",
+  "description": "Snap your fingers on camera: you turn to dust like Thanos and your mic mutes. Snap again to come back.",
+  "permissions": ["storage"],
+  "host_permissions": ["https://meet.google.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://meet.google.com/*"],
+      "js": ["inject.js"],
+      "run_at": "document_start",
+      "world": "MAIN"
+    },
+    {
+      "matches": ["https://meet.google.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Snap Vanish"
+  },
+  "icons": { "16": "icons/icon16.png", "48": "icons/icon48.png", "128": "icons/icon128.png" }
+}
